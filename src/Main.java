@@ -14,6 +14,7 @@ public class Main {
         System.out.println("Rezultatul restului este: " + Rest (2,3));
         System.out.println("Temperatura in Celsius este: " + Temperature(90));
         System.out.println("Distanta in metrii este: "+ Distanta(1));
+
     }
 
     public static void Shopping() {
@@ -96,6 +97,9 @@ public class Main {
         double metri= inch*0.02;
         return metri;
     }
+
+
+
 
 }
 
