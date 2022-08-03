@@ -42,6 +42,32 @@ public class Main6 {
 
         System.out.println(op.sumAndAverageOfNumbers(0));
 
+        op.verifyTheNumber(0);
+        System.out.println();
+
+        op.verifyTheNumber2(0);
+        System.out.println();
+
+        op.twoNumbers(10,20);
+        System.out.println();
+
+        op.whatNumberIstheBiggest(40, 80);
+        System.out.println();
+
+        op.theEvenNumbers();
+        System.out.println();
+
+        op.theOddNumbers();
+        System.out.println();
+
+        op.sumAndAverageNumbers();
+        System.out.println();
+
+        System.out.println(op.divisibleNumbers(1,50));
+
+        op.wozaCozaLoza();
+        System.out.println();
+
 
 
 
