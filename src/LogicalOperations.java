@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.List;
 
 public class LogicalOperations {
@@ -277,6 +276,74 @@ sum += i;
 
         }
 
-    }}
+    }
+// In clasa LogicalOp, creati o metoda care sa scrie pe un array de 100 de pozitii, valorile de la 1 la 100. Sa se afiseze progresul in consola pe tot parcursul. Apelati metoda in main() pentru a verifica daca functioneaza.
+
+public int[] getArray(){
+    int[] myArray = new int[100];
+    for(int i = 1; i <= 100; i++){
+        myArray[i-1] =i;
+        System.out.println(myArray[i-1]);
+    }
+    return myArray;
+    }
+    // Creati o metoda care primeasca un parametru de tip array de numere intregi gol, si sa il returneze populat cu toate valorile pare de la 1 la 100. Apelati metoda in main() pentru a verifica daca functioneaza. Atentie, metoda returneaza un array, deci acesta va trebui surprins si afisat folosind o bucla.
+
+    public int[] getEvenArray (){
+int[]evenArr = new int[100];
+int a = 0;
+        for(int i = 1; i <= 100; i++){
+            if(i % 2 ==0){
+                evenArr[a] = i;
+                a++;
+                System.out.println(evenArr[a]=i);
+            }
+
+        }
+        return evenArr;
+    }
+    // Creati o metoda care sa primeasca un parametru de tip array de numere, si sa fie populat cu valori. Metoda sa calculeze si sa returneze media numerelor din array. Apelati metoda in main() pentru a verifica daca functioneaza.
+
+    public double getAverageArray(int [] myArray){
+double sum = 0;
+        for(int i = 0; i < myArray.length; i++ ){
+            sum += myArray[i];
+
+        }
+        return sum/ myArray.length;
+    }
+
+    // Creati o metoda care sa primeasca un parametru de tip array de string-uri, populat cu valori, si un parametru de tip String. Metoda sa verifice daca valoarea string-ului primit se regaseste in array-ul primit, iar daca da sa returneze true iar daca nu, sa returneze false.  Apelati metoda in main() pentru a verifica daca functioneaza.
+
+    public boolean checkArray( String[] array, String arr){
+        for(int i = 1; i < array.length; i++){
+            if(array[i].equals(arr)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori, si un parametru de tip numar. Metoda sa verifice daca numarul primit se afla in array-ul primit, si daca da, atunci sa returneze pozitia pe care se afla numarul.  Apelati metoda in main() pentru a verifica daca functioneaza.
+
+    public int getPosition (int[] numbers, int number){
+        for(int i = 0; i < numbers.length; i++){
+            if(numbers[i]==number){
+                return i;
+            }
+
+        }
+return 0;
+    }
+
+    // Creati o metoda care sa afiseze urmatoarea grila, folosind un array.
+
+    public void lines(){
+        char[] line = {'-', '-', '-', '-', '-', '-', '-', '-', '-', '-',};
+        for(int i = 0; i< 10; i++){
+            System.out.println(line);
+        }
+    }
+}
 
 

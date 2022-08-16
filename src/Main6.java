@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -68,8 +69,27 @@ public class Main6 {
         op.wozaCozaLoza();
         System.out.println();
 
+        System.out.println(op.getArray());
 
+        System.out.println(op.getEvenArray());
 
+        int [] myArray ={3,4,5,6,7};
+        System.out.println(op.getAverageArray(myArray));
 
+String [] array = {"Teo", "Teodora", "Cristina"};
+if(op.checkArray(array, "Teo")){
+        System.out.println("Valoarea este in array.");
 
-}}
+}
+else
+    System.out.println("Valoarea nu este in array.");
+
+int [] number = {1,2,3,4,5,6,7,8,9,10};
+        System.out.println("Numarul este in array.");
+
+        op.lines();
+        System.out.println();
+
+}
+
+    }
